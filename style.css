@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    font-size: 16px;
+}
+.main-heading{
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: 'Playfair Display', serif;
+}
+.main-img{
+    width: 100%;
+}
+.main-img > img{
+    width: 100%;
+}
+.container{
+    width: 100%;
+    padding: 2rem;
+}
+.title{
+    display: flex;
+    align-items: flex-start;
+    font-style: italic;
+    margin: 1.4rem 0 2rem 0;
+    gap: .5rem;
+}
+.dots{
+    margin-top: .2rem;
+}
+.title > p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+.serving-icon{
+    color: #F2994A;
+    font-size: 2.2rem !important;
+}
+.icon-clock{
+    font-size: 2.2rem !important;
+}
+.details{
+    font-family: 'Montserrat','sans-serif';
+}
+.info-heading{
+    font-weight: 700;
+    font-size: .65rem;
+    text-transform: uppercase;
+    color: #BDBDBD;
+}
+.serving-details{
+    font-size: .9rem;
+    color: #F2994A;
+    font-weight: 500;
+}
+.info-details{
+    font-size: .9rem;
+    color: #333333;
+    font-weight: 500;
+}
+.servings, .preptime, .cooktime, .totaltime{
+    display: flex;
+    gap: .55rem;
+    align-items: center;
+}
+section{
+    margin-top: 3rem;
+}
+main > h1 {
+    font-weight: 700;
+    font-family: 1.5rem;
+}
+.semi-title{
+    font-weight: 400;
+    font-size: 1.1rem;
+    font-style: italic;
+    margin: 2rem 0;
+}
+.bold{
+    font-weight: 800;
+}
+.item-desc{
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    line-height: 1.8rem;
+  }
+  .each-instruction{
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    align-items: flex-start;
+    gap: .9rem;
+    margin: 1.7rem 0;
+  }
+  .list-numbers{
+      background-color: #F2994A;
+      height: 36px;
+      aspect-ratio: 1;
+      display: grid;
+      /* place-items: center; */
+      justify-items: center;
+      font-size: 1.3rem;
+      color: white;
+      font-weight: 700;
+      border-radius: .5rem;
+      font-family: 'Playfair Display', serif;
+
+  }
+  .each-instruction > h4 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      background-color: #F2994A;
+      color: white;
+      padding: .2rem .78rem;
+      border-radius: .3rem;
+  }
+  .each-instruction > p {
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.5rem;
+  }
+  .recipe-src{
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #BDBDBD;
+    margin: 4rem 0;
+  }
+  .credit{
+      margin: 0 auto;
+      font-family: Montserrat;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #828282;
+    margin: 2rem;
+  }
+  .src-link{
+      text-decoration: none;
+      color: #BDBDBD;
+      font-weight: 500;
+  }
+  .credit-link{
+      text-decoration: none;
+      font-weight: 600;
+      color: #828282;
+      cursor: pointer;
+  }
+@media screen and (min-width:920px) {
+    body{
+        /* background-color: red; */
+    }
+    .container{
+        /* width: 900px; */
+        max-width: 1080px;
+    }
+    .container{
+        margin: 0 auto;
+        padding: 2rem;
+    }
+    .title{
+        gap: .5rem;
+        width: 60%;
+        margin-top: 1rem;
+    }
+    .dots{
+        margin-top: .3rem;
+    }
+    .title > p {
+        font-size: .9rem;
+    }
+    .servings, .preptime, .cooktime, .totaltime{
+        margin: 1.6rem 0;
+    }
+    .details{
+        order: 2;
+        margin-left: auto;
+    }
+    section{
+        display: flex;
+        margin-top: 3rem;
+    }
+     main{
+        width: 70%;
+    }
+}
+
+@media screen and (min-width:600px) and  (max-width:920px) {
+    .title{
+        width: 80%;
+    }
+    .main-heading{
+        font-size: 2rem;
+    }
+    .details{
+        order: 2;
+        margin-left: auto;
+        padding-left: 1rem;
+    }
+    section{
+        display: flex;
+    }
+    .title{
+        gap: .5rem;
+        width: 60%;
+        margin-top: 1rem;
+    }
+    .dots{
+        margin-top: .3rem;
+    }
+    .title > p {
+        font-size: .9rem;
+    }
+    .servings, .preptime, .cooktime, .totaltime{
+        margin: 1.6rem 0;
+    }
+}
+@media screen and (max-width:600px) {
+    .container{
+        padding: 1.5rem;
+    }
+    .main-heading{
+        font-size: 1.6rem;
+    }
+    .title > p {
+        font-size: .85rem;
+    }
+    .other-details{
+        display: flex;
+        justify-content: space-between;
+        margin: 1.5rem 0;
+    }
+ 
+    
+    .serving-icon{
+        color: #F2994A;
+        font-size: 1.1rem !important;
+    }
+    .icon-clock{
+        font-size: 1.1rem !important;
+    }
+    .details{
+        font-family: 'Montserrat','sans-serif';
+    }
+    .info-heading{
+        font-weight: 700;
+        font-size: .5rem;
+        text-transform: uppercase;
+        color: #BDBDBD;
+    }
+    .serving-details{
+        font-size: .7rem;
+        color: #F2994A;
+        font-weight: 500;
+    }
+    .info-details{
+        font-size: .7rem;
+        color: #333333;
+        font-weight: 500;
+    }
+    .servings, .preptime, .cooktime, .totaltime{
+        display: flex;
+        gap: .55rem;
+        align-items: center;
+    }
+
+    section{
+        margin-top: 1.3rem;
+    }
+
+    .item-desc{
+        font-weight: 400;
+        font-family: 'Montserrat', sans-serif;
+        font-size: .9rem;
+      }
+}
+
+
+
+/* Customize the label (the container) */
+.container--input {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin: 1.5rem 0;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .container--input input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container--input:hover input ~ .checkmark {
+    background-color: rgb(255, 255, 255);
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .container--input input:checked ~ .checkmark {
+    background-color: #F2994A;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  .checkmark{
+      border: 1px solid rgba(156, 156, 156, 0.699);
+      border-radius: .2rem;
+  }
+  /* Show the checkmark when checked */
+  .container--input input:checked ~ .checkmark:after {
+    display: block;
+  }
+  .container--input input:checked ~ .checkmark{
+      border: none;
+  }
+  
+  /* Style the checkmark/indicator */
+  .container--input .checkmark:after {
+    left: 6px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
